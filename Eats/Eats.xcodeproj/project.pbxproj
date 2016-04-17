@@ -15,6 +15,10 @@
 		BF7D4E371CC395DD00C430C5 /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7D4E361CC395DD00C430C5 /* Roxas.framework */; };
 		BF7D4E381CC395DD00C430C5 /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF7D4E361CC395DD00C430C5 /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF7D4E3F1CC396C200C430C5 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E3E1CC396C200C430C5 /* RestaurantViewController.swift */; };
+		BF9EBBAF1CC3AC6600E387ED /* Feast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9EBBAE1CC3AC6600E387ED /* Feast.framework */; };
+		BF9EBBB01CC3AC6600E387ED /* Feast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9EBBAE1CC3AC6600E387ED /* Feast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF9EBBB21CC3AC7300E387ED /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9EBBB11CC3AC7300E387ED /* Alamofire.framework */; };
+		BF9EBBB31CC3AC7300E387ED /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9EBBB11CC3AC7300E387ED /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BF9EBBB01CC3AC6600E387ED /* Feast.framework in Embed Frameworks */,
+				BF9EBBB31CC3AC7300E387ED /* Alamofire.framework in Embed Frameworks */,
 				BF7D4E381CC395DD00C430C5 /* Roxas.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -41,6 +47,8 @@
 		BF7D4E321CC390F900C430C5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		BF7D4E361CC395DD00C430C5 /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D4E3E1CC396C200C430C5 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		BF9EBBAE1CC3AC6600E387ED /* Feast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Feast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9EBBB11CC3AC7300E387ED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9EBBAF1CC3AC6600E387ED /* Feast.framework in Frameworks */,
+				BF9EBBB21CC3AC7300E387ED /* Alamofire.framework in Frameworks */,
 				BF7D4E371CC395DD00C430C5 /* Roxas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +97,8 @@
 		BF7D4E3A1CC395E700C430C5 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BF9EBBB11CC3AC7300E387ED /* Alamofire.framework */,
+				BF9EBBAE1CC3AC6600E387ED /* Feast.framework */,
 				BF7D4E361CC395DD00C430C5 /* Roxas.framework */,
 			);
 			name = Dependencies;
@@ -309,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Eats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sparksc.Eats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Eats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sparksc.Eats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
