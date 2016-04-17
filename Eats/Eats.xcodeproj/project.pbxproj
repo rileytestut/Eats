@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF13253E1CC3A21A000E1376 /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF13253D1CC3A21A000E1376 /* Roxas.framework */; };
-		BF13253F1CC3A21A000E1376 /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF13253D1CC3A21A000E1376 /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF7D4E211CC38E7F00C430C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E201CC38E7F00C430C5 /* AppDelegate.swift */; };
 		BF7D4E261CC38E7F00C430C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D4E241CC38E7F00C430C5 /* Main.storyboard */; };
 		BF7D4E281CC38E7F00C430C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7D4E271CC38E7F00C430C5 /* Assets.xcassets */; };
 		BF7D4E2B1CC38E7F00C430C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D4E291CC38E7F00C430C5 /* LaunchScreen.storyboard */; };
 		BF7D4E331CC390F900C430C5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E321CC390F900C430C5 /* MasterViewController.swift */; };
+		BF7D4E371CC395DD00C430C5 /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7D4E361CC395DD00C430C5 /* Roxas.framework */; };
+		BF7D4E381CC395DD00C430C5 /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF7D4E361CC395DD00C430C5 /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF7D4E3F1CC396C200C430C5 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E3E1CC396C200C430C5 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BF1325401CC3A21A000E1376 /* Embed Frameworks */ = {
+		BF7D4E391CC395DD00C430C5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF13253F1CC3A21A000E1376 /* Roxas.framework in Embed Frameworks */,
+				BF7D4E381CC395DD00C430C5 /* Roxas.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,7 +32,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BF13253D1CC3A21A000E1376 /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D4E1D1CC38E7F00C430C5 /* Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D4E201CC38E7F00C430C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7D4E251CC38E7F00C430C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +39,8 @@
 		BF7D4E2A1CC38E7F00C430C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF7D4E2C1CC38E7F00C430C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7D4E321CC390F900C430C5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BF7D4E361CC395DD00C430C5 /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7D4E3E1CC396C200C430C5 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,26 +48,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF13253E1CC3A21A000E1376 /* Roxas.framework in Frameworks */,
+				BF7D4E371CC395DD00C430C5 /* Roxas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF1325411CC3A21C000E1376 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				BF13253D1CC3A21A000E1376 /* Roxas.framework */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
 		BF7D4E141CC38E7F00C430C5 = {
 			isa = PBXGroup;
 			children = (
 				BF7D4E1F1CC38E7F00C430C5 /* Eats */,
-				BF1325411CC3A21C000E1376 /* Dependencies */,
+				BF7D4E3A1CC395E700C430C5 /* Dependencies */,
 				BF7D4E1E1CC38E7F00C430C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,13 +76,46 @@
 			isa = PBXGroup;
 			children = (
 				BF7D4E201CC38E7F00C430C5 /* AppDelegate.swift */,
-				BF7D4E321CC390F900C430C5 /* MasterViewController.swift */,
 				BF7D4E241CC38E7F00C430C5 /* Main.storyboard */,
+				BF7D4E3B1CC3965200C430C5 /* Restaurants */,
+				BF7D4E3C1CC3965A00C430C5 /* Resources */,
+				BF7D4E3D1CC3967F00C430C5 /* Supporting Files */,
+			);
+			path = Eats;
+			sourceTree = "<group>";
+		};
+		BF7D4E3A1CC395E700C430C5 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D4E361CC395DD00C430C5 /* Roxas.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		BF7D4E3B1CC3965200C430C5 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				BF7D4E321CC390F900C430C5 /* MasterViewController.swift */,
+				BF7D4E3E1CC396C200C430C5 /* RestaurantViewController.swift */,
+			);
+			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		BF7D4E3C1CC3965A00C430C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				BF7D4E271CC38E7F00C430C5 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BF7D4E3D1CC3967F00C430C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				BF7D4E291CC38E7F00C430C5 /* LaunchScreen.storyboard */,
 				BF7D4E2C1CC38E7F00C430C5 /* Info.plist */,
 			);
-			path = Eats;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +128,7 @@
 				BF7D4E191CC38E7F00C430C5 /* Sources */,
 				BF7D4E1A1CC38E7F00C430C5 /* Frameworks */,
 				BF7D4E1B1CC38E7F00C430C5 /* Resources */,
-				BF1325401CC3A21A000E1376 /* Embed Frameworks */,
+				BF7D4E391CC395DD00C430C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7D4E211CC38E7F00C430C5 /* AppDelegate.swift in Sources */,
+				BF7D4E3F1CC396C200C430C5 /* RestaurantViewController.swift in Sources */,
 				BF7D4E331CC390F900C430C5 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

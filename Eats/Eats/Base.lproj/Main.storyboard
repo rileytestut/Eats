@@ -16,13 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AF-KU-w4X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="TKD-rj-Hcl" kind="embed" identifier="embedPageViewController" id="L5H-42-yPx"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1AF-KU-w4X" secondAttribute="bottom" id="YUh-uc-iFk"/>
+                            <constraint firstItem="1AF-KU-w4X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lZD-kU-pYE"/>
+                            <constraint firstItem="1AF-KU-w4X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pPS-tu-pfp"/>
+                            <constraint firstAttribute="trailing" secondItem="1AF-KU-w4X" secondAttribute="trailing" id="yJT-Oo-0Ck"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Eats" id="jsf-E1-aZP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1464" y="1168"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="CGc-No-xJI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="TKD-rj-Hcl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMH-yv-fNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="1883"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pUz-wu-Gwj">
