@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF13253E1CC3A21A000E1376 /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF13253D1CC3A21A000E1376 /* Roxas.framework */; };
+		BF13253F1CC3A21A000E1376 /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF13253D1CC3A21A000E1376 /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF7D4E211CC38E7F00C430C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E201CC38E7F00C430C5 /* AppDelegate.swift */; };
 		BF7D4E261CC38E7F00C430C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D4E241CC38E7F00C430C5 /* Main.storyboard */; };
 		BF7D4E281CC38E7F00C430C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7D4E271CC38E7F00C430C5 /* Assets.xcassets */; };
@@ -14,7 +16,22 @@
 		BF7D4E331CC390F900C430C5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D4E321CC390F900C430C5 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BF1325401CC3A21A000E1376 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF13253F1CC3A21A000E1376 /* Roxas.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BF13253D1CC3A21A000E1376 /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D4E1D1CC38E7F00C430C5 /* Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D4E201CC38E7F00C430C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7D4E251CC38E7F00C430C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,16 +46,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF13253E1CC3A21A000E1376 /* Roxas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF1325411CC3A21C000E1376 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BF13253D1CC3A21A000E1376 /* Roxas.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 		BF7D4E141CC38E7F00C430C5 = {
 			isa = PBXGroup;
 			children = (
 				BF7D4E1F1CC38E7F00C430C5 /* Eats */,
+				BF1325411CC3A21C000E1376 /* Dependencies */,
 				BF7D4E1E1CC38E7F00C430C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +101,7 @@
 				BF7D4E191CC38E7F00C430C5 /* Sources */,
 				BF7D4E1A1CC38E7F00C430C5 /* Frameworks */,
 				BF7D4E1B1CC38E7F00C430C5 /* Resources */,
+				BF1325401CC3A21A000E1376 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +317,7 @@
 				BF7D4E311CC38E7F00C430C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
